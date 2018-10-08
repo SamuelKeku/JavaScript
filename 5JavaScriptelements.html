@@ -1,0 +1,65 @@
+<html>
+<body>
+
+  <p>Click the button to go on the next page:</p>
+
+  <button onclick="number1()">Press me to see more</button>
+
+  <script>
+  function number1() {
+      alert("Why did you click that button you are foolish");
+  }
+</script>
+
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+
+<h2>Change back to Hello JavaScript</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+</script>
+
+
+
+<head>
+<script>
+function myfunction(txt) {
+    document.getElementById("demo").innerHTML = txt
+}
+</script>
+</head>
+
+<body>
+<p>
+2 buttons that display arguments
+</p>
+
+<form>
+<input type="button" onclick="myfunction('JavaScript is kinda hard')" value="Click this one">
+<input type="button" onclick="myfunction('Star wars is boring')" value="No click this one">
+</form>
+
+<p id="demo"></p>
+
+
+
+
+<p>Change the text to your name</p>
+
+<button onclick="myFunction('Samuel')">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(name) {
+    document.getElementById("demo").innerHTML =
+    "Welcome " + name;
+}
+</script>
